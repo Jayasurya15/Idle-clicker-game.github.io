@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advanced Idle Clicker Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="all">
+        <h1 id="header">Advanced Idle Clicker Game</h1>
+        <p id="instructions">
+            Welcome to the Advanced Idle Clicker Game! Click the "Work" button to start earning money. Use your money to buy workers, factories, and rocket parts. Build the rocket and launch it to win the game!
+        </p>
+
+        <div class="section">
+            <label>Your Money: $</label>
+            <var id="userMoney">0</var><br>
+            <label>Total Production ($/s):</label>
+            <var id="totalProduction">0</var><br>
+            <button id="work" onclick="work()">💼 Work</button>
+        </div>
+
+        <div class="section rocket-status">
+            <label>Rocket Status:</label>
+            <var id="rocketStatus">Not Ready.</var><br>
+            <button id="launchRocket" onclick="launchRocket()">🚀 Launch Rocket!</button>
+            <label>Price: $</label>
+            <var id="launchCost">10,000,000</var>
+        </div>
+
+        <div class="section">
+            <h3>Worker:</h3>
+            <label>Number of Workers:</label>
+            <var id="numWorker">0</var><br>
+            <button id="buyWorker" onclick="buyWorker()">👷 Buy Worker</button>
+            <label>Price: $</label>
+            <var id="workerCost">100</var><br>
+            <label>Current Production ($/s):</label>
+            <var id="workerProduction">0</var>
+        </div>
+
+        <div class="section">
+            <h3>Factory:</h3>
+            <label>Number of Factories:</label>
+            <var id="numFactory">0</var><br>
+            <button id="buyFactory" onclick="buyFactory()">🏭 Buy Factory</button>
+            <label>Price: $</label>
+            <var id="factoryCost">1,000</var><br>
+            <label>Current Production ($/s):</label>
+            <var id="factoryProduction">0</var>
+        </div>
+
+        <div class="section">
+            <h3>Kilofactory:</h3>
+            <label>Number of Kilofactories:</label>
+            <var id="numKilofactory">0</var><br>
+            <button id="buyKilofactory" onclick="buyKilofactory()">🏢 Buy Kilofactory</button>
+            <label>Price: $</label>
+            <var id="kilofactoryCost">10,000</var><br>
+            <label>Current Production ($/s):</label>
+            <var id="kilofactoryProduction">0</var>
+        </div>
+
+        <div class="section">
+            <h3>Megafactory:</h3>
+            <label>Number of Megafactories:</label>
+            <var id="numMegafactory">0</var><br>
+            <button id="buyMegafactory" onclick="buyMegafactory()">🏢 Buy Megafactory</button>
+            <label>Price: $</label>
+            <var id="megafactoryCost">100,000</var><br>
+            <label>Current Production ($/s):</label>
+            <var id="megafactoryProduction">0</var>
+        </div>
+
+        <div class="section">
+            <h3>Rocket Construction:</h3>
+            <label>Parts Required:</label>
+            <var id="nosecone">Nose Cone,</var>
+            <var id="cockpit">Cockpit,</var>
+            <var id="fuel">Fuel,</var>
+            <var id="frame">Frame,</var>
+            <var id="oxidizer">Oxidizer,</var>
+            <var id="pumps">Pumps,</var>
+            <var id="nozzle">Nozzle,</var>
+            <var id="fins">Fins</var><br>
+            <button id="buyNosecone" onclick="buyNosecone()">🛠️ Buy Nose Cone</button>
+            <label>Price: $</label>
+            <var id="noseconePrice">1,000,000</var><br>
+            <button id="buyCockpit" onclick="buyCockpit()">🛠️ Buy Cockpit</button>
+            <label>Price: $</label>
+            <var id="cockpitPrice">1,500,000</var><br>
+            <button id="buyFuel" onclick="buyFuel()">🛠️ Buy Fuel</button>
+            <label>Price: $</label>
+            <var id="fuelPrice">2,000,000</var><br>
+            <button id="buyFrame" onclick="buyFrame()">🛠️ Buy Frame</button>
+            <label>Price: $</label>
+            <var id="framePrice">2,500,000</var><br>
+            <button id="buyOxidizer" onclick="buyOxidizer()">🛠️ Buy Oxidizer</button>
+            <label>Price: $</label>
+            <var id="oxidizerPrice">3,000,000</var><br>
+            <button id="buyPumps" onclick="buyPumps()">🛠️ Buy Pumps</button>
+            <label>Price: $</label>
+            <var id="pumpsPrice">3,500,000</var><br>
+            <button id="buyNozzle" onclick="buyNozzle()">🛠️ Buy Nozzle</button>
+            <label>Price: $</label>
+            <var id="nozzlePrice">4,000,000</var><br>
+            <button id="buyFins" onclick="buyFins()">🛠️ Buy Fins</button>
+            <label>Price: $</label>
+            <var id="finsPrice">4,500,000</var>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h1 id="footer-header">By Jayasurya  
+            <a href="https://jayasurya15.github.io/Home-page.github.io/"><button class="js">Home</button></a>
+        </h1>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
