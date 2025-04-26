@@ -24,7 +24,7 @@ var nozzle = false;
 var fins = false;
 var readyToLaunch = false;
 
-// Functions
+// Work Function
 function work() {
     userMoney += basicIncome * workMultiplier;
     document.getElementById("userMoney").innerHTML = userMoney;
@@ -33,6 +33,7 @@ function work() {
     }
 }
 
+// Worker Functions
 function worker() {
     userMoney += workerIncome * numWorker;
     document.getElementById("userMoney").innerHTML = userMoney;
@@ -52,6 +53,7 @@ function buyWorker() {
     totalProduction();
 }
 
+// Factory Functions
 function factory() {
     userMoney += factoryIncome * numFactory;
     document.getElementById("userMoney").innerHTML = userMoney;
@@ -71,6 +73,7 @@ function buyFactory() {
     totalProduction();
 }
 
+// Kilofactory Functions
 function kilofactory() {
     userMoney += kilofactoryIncome * numKilofactory;
     document.getElementById("userMoney").innerHTML = userMoney;
@@ -90,6 +93,7 @@ function buyKilofactory() {
     totalProduction();
 }
 
+// Megafactory Functions
 function megafactory() {
     userMoney += megafactoryIncome * numMegafactory;
     document.getElementById("userMoney").innerHTML = userMoney;
@@ -109,6 +113,7 @@ function buyMegafactory() {
     totalProduction();
 }
 
+// Rocket Construction Functions
 function buyNosecone() {
     purchaseRocketPart("nosecone", 1000000, "Nose Cone");
 }
@@ -157,6 +162,7 @@ function purchaseRocketPart(part, cost, name) {
     checkLaunchStatus();
 }
 
+// Check Launch Status
 function checkLaunchStatus() {
     if (nosecone && cockpit && fuel && frame && oxidizer && pumps && nozzle && fins) {
         readyToLaunch = true;
@@ -164,6 +170,7 @@ function checkLaunchStatus() {
     }
 }
 
+// Launch Rocket
 function launchRocket() {
     if (!readyToLaunch) {
         alert("ROCKET NOT READY!");
@@ -179,6 +186,7 @@ function launchRocket() {
     alert("Congrats! YOU HAVE WON THE GAME.");
 }
 
+// Calculate Total Production
 function totalProduction() {
     const workerProduction = numWorker * workerIncome;
     const factoryProduction = numFactory * factoryIncome;
@@ -187,6 +195,7 @@ function totalProduction() {
     document.getElementById("totalProduction").innerHTML = workerProduction + factoryProduction + kilofactoryProduction + megafactoryProduction;
 }
 
+// Interval to Automate Production
 window.setInterval(function () {
     worker();
     factory();
