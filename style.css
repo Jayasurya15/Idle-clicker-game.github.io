@@ -15,7 +15,8 @@ body {
 }
 
 #all {
-    width: 80%;
+    width: 90%;
+    max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.9);
@@ -47,6 +48,9 @@ button {
     font-size: 1em;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
 }
 
 button:hover {
